@@ -904,53 +904,51 @@ ul {
 					width: auto;
 				}
 			}
-			.ft-txt {
+			.company-name {
+				font-size: 17px;
+				font-weight: 700;
+			}
+			.address {
 				font-size: 13px;
-				line-height: 20px;
 			}
 		}
-		.footer-right {
-			width: 66%;
-			padding-left: 6.4%;
+		.footer-link {
+			width: 43%;
 			display: flex;
 			padding-top: 97px;
-			.footer-link {
-				width: 61%;
-				display: flex;
-				.list-link {
-					flex: 1;
-					a {
-						font-size: 15px;
-					}
+			.list-link {
+				// flex: 1;
+				a {
+					font-size: 15px;
+				}
+				&:first-child {
+					width: 60%;
+				}
+				&:last-child {
+					width: 40%;
 				}
 			}
-			.info-social {
-				line-height: 20px;
-				width: 39%;
-				.company-name {
-					font-size: 17px;
-					font-weight: 700;
-				}
-				.address {
-					font-size: 13px;
-				}
-				.list-social {
-					display: flex;
-					max-width: 223px;
-					flex-wrap: wrap;
-					justify-content: flex-start;
-					li {
-						padding: 0;
-						margin-right: 12px;
-						margin-bottom: 11px;
-						a {
-							display: block;
-							background: #14334D;
-							height: 44px;
-							width: 44px;
-							border-radius: 50%;
-							padding: 10px;
-						}
+		}
+		.info-social {
+			line-height: 20px;
+			width: 23%;
+			padding-top: 97px;
+			.list-social {
+				display: flex;
+				max-width: 223px;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+				li {
+					padding: 0;
+					margin-right: 12px;
+					margin-bottom: 11px;
+					a {
+						display: block;
+						background: #14334D;
+						height: 44px;
+						width: 44px;
+						border-radius: 50%;
+						padding: 10px;
 					}
 				}
 			}
@@ -1384,15 +1382,16 @@ ul {
 			.footer-left {
 				width: 100%;
 			}
-			.footer-right {
-				padding-left: 0;
+			.footer-link {
 				padding-top: 20px;
 				width: 100%;
-				.footer-link {
-					width: 66.67%;
-				}
-				.info-social {
-					width: 33.33%;
+			}
+			.info-social {
+				width: 100%;
+				padding-top: 40px;
+				.list-social {
+					max-width: 100%;
+					justify-content: center;
 				}
 			}
 		}
@@ -1522,5 +1521,14 @@ ul {
 		}
 	}
 	.footer {
+		.box-section {
+			.footer-left {
+				.logo-footer {
+					img {
+						max-width: 140px;
+					}
+				}
+			}
+		}
 	}
 }
